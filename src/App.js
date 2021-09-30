@@ -1,5 +1,5 @@
 import React from 'react'
-import ObjectExample from './tutorial/3-conditional-rendering/setup/1-multiple-returns'
+import ObjectExample from './tutorial/4-forms/setup/2-multiple-inputs'
 function App() {
   return (
     <div className='container'>
