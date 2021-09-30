@@ -18,8 +18,8 @@ const UseEffectFetchData = () => {
     <h3>github users</h3>
       {
         <ul className='users'>
-          {users.map((user) => {
-            const {id , avatar_url , login , html_url} = user;
+          {(users && users.length > 0) ? users.map((user) => {
+            const {id , avatar_url , login , html_url} = user; //object destructure
             return (
               <li key={id}>
                 <img src={avatar_url} alt={login} />
@@ -29,7 +29,10 @@ const UseEffectFetchData = () => {
                 </div>
               </li>
             );
-          })}
+          }):(
+            <h2>Loading.....</h2>
+          )
+          }
         </ul>
       }
     </>
