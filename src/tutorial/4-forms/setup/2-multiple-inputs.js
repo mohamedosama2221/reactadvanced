@@ -9,7 +9,8 @@ import React, { useState } from 'react';
 const ControlledInputs = () => {
   const [person, setPerson] = useState({firstName:"", email:"" ,age:''});
   const [people, setPeople] = useState([]);
-
+  
+  //useing js dynamic input to set muliple values with the same handlechange function
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
