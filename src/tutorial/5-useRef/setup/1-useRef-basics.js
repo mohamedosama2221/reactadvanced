@@ -12,6 +12,8 @@ const UseRefBasics = () => {
     console.log(refContainer.current.value)
     console.log(divContainer.current.textContent)
   }
+  //used most commonly to foucs ont he input elements as soon as we render the container
+  //notice that we didnt use the [] because useref doesnt triger a re-render so its safe to use it in useeffect with worry of inifint loops
   useEffect(()=>{
     refContainer.current.focus()
   })
