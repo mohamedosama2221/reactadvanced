@@ -19,6 +19,7 @@ export const showProducts = () => {
     },
   };
 };
+
 export const removeProduct = () => {
   return {
     type: REMOVE_SINGLE_PRODUCTS,
@@ -26,7 +27,7 @@ export const removeProduct = () => {
   };
 };
 
-export const showSingleProduct = (id) => async (dispatch, getState) => {
+export const showSingleProduct = (id) => async (dispatch) => {
   const singleProduct = await fakeApi.get(`/products/${id}`);
   dispatch({ type: SHOW_SINGLE_PRODUCTS, payload: singleProduct.data });
 };
