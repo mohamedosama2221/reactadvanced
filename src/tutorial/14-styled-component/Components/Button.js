@@ -1,11 +1,11 @@
 import React from "react";
 import { StyledButton, StyledButtonLabel } from "./Button.style";
 
-const Button = (props) => {
-  const { bg, color, children, mainButton } = props;
+const Button = ({ children, ...props }) => {
+  // const { bg, color, children, mainButton } = props;
   return (
     <div>
-      <StyledButton bg={bg} color={color} mainButton={mainButton}>
+      <StyledButton {...props}>
         {children}
         <StyledButtonLabel className="work">Color</StyledButtonLabel>
         <StyledButtonLabel work>Color</StyledButtonLabel>
