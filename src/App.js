@@ -1,12 +1,18 @@
 import React from "react";
-import ObjectExample from "./tutorial/react-redux/setup/index";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Error from "./tutorial/11-react-router/setup/Error";
-import SingleProduct from "./tutorial/react-redux/setup/singleProducst";
+// import ObjectExample from "./tutorial/react-redux/setup/index";
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import Error from "./tutorial/11-react-router/setup/Error";
+// import SingleProduct from "./tutorial/react-redux/setup/singleProducst";
+import ObjectExample from "./tutorial/14-styled-component";
+import { GlobalStyle } from "./tutorial/14-styled-component/GlobalStyle/GlobalStyle.style";
+import { ThemeProvider } from "styled-components";
+import Theme from "./tutorial/14-styled-component/Theme/theme";
 function App() {
   return (
-    <div className="container">
-      <Router>
+    <ThemeProvider theme={Theme}>
+      <div className="container">
+        <GlobalStyle />
+        {/* <Router>
         <Switch>
           <Route path="/" exact>
             <ObjectExample />
@@ -16,8 +22,10 @@ function App() {
             <Error />
           </Route>
         </Switch>
-      </Router>
-    </div>
+      </Router> */}
+        <ObjectExample />
+      </div>
+    </ThemeProvider>
   );
 }
 
