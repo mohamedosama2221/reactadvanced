@@ -3,7 +3,7 @@ import React from "react";
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import Error from "./tutorial/11-react-router/setup/Error";
 // import SingleProduct from "./tutorial/react-redux/setup/singleProducst";
-import ObjectExample from "./tutorial/14-styled-component";
+import ObjectExample from "./tutorial/16-testing";
 import { GlobalStyle } from "./tutorial/14-styled-component/GlobalStyle/GlobalStyle.style";
 import { ThemeProvider } from "styled-components";
 import Theme from "./tutorial/14-styled-component/Theme/theme";
